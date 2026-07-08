@@ -22,11 +22,9 @@ class Solution {
                     freq[s.charAt(i) - 'a']++;
                 }
 
-                for (int i=0; i < 26; i++) {
-                    if (freq[i] != base[i]) {
-                        valid = false;
-                        break;
-                    }
+               if (!Arrays.equals(base, freq)) {
+                   valid = false;
+                     break;
                 }
 
                 if (!valid) {
