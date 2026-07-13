@@ -8,8 +8,8 @@ class Solution {
         int lowLength = String.valueOf(low).length();
         int highLength = String.valueOf(high).length();
 
+        
         for (int len = lowLength; len <= highLength; len++){
-
             for (int i=0;i <= 9 - len; i++) {
 
                 int num = Integer.parseInt(digits.substring(i,i+len));
